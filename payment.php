@@ -1,4 +1,4 @@
-<?
+<?php
 
 /*
 * payment.php -- Comenzar el proceso de pagos

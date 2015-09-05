@@ -1,4 +1,4 @@
-<?
+<?php
 
 /*
 * pay_notif.php -- Receptor de notificacion de pago

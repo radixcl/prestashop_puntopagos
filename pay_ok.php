@@ -1,4 +1,4 @@
-<?
+<?php
 
 /*
 * pay_ok.php -- Conclusion de pago exitoso

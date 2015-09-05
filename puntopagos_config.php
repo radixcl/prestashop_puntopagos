@@ -1,4 +1,4 @@
-<?
+<?php
 
 $puntopagos_keyid =  'XXXXXXXXXXXXXXXXXXXX';
 $puntopagos_secret = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';

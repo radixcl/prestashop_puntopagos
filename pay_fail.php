@@ -1,4 +1,4 @@
-<?
+<?php
 
 /*
 * pay_fail.php -- Manejar fallo de pago

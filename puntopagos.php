@@ -1,26 +1,27 @@
-<?
+<?php
 
 /*
 * puntopagos.php -- Declaracion de objetos y rutinas principal
 * Parte de modulo de pagos de puntopagos para prestashop
 *
 * Author: Matias Fernandez <matias.fernandez@gmail.com>
-* Copyright (C) 2012  Matias Fernandez
+* Copyright (C) 2012-2015  Matias Fernandez
 *
 */
 
+if (!defined('_PS_VERSION_'))
+	exit;
 
-class puntopagos extends PaymentModule  //this declares the class and specifies it will extend the standard payment module
-{
+class puntopagos extends PaymentModule {	//this declares the class and specifies it will extend the standard payment module
  
     private $_html = '';
     private $_postErrors = array();
  
-    function __construct()
-    {
+    function __construct() {
         $this->name = 'puntopagos';
         $this->tab = 'payments_gateways';
-        $this->version = 1;
+        $this->version = '1.16';
+		$this->author = 'Matias Fernandez <matias.fernandez@gmail.com>';
  
         parent::__construct(); // The parent construct is required for translations
  
@@ -29,8 +30,7 @@ class puntopagos extends PaymentModule  //this declares the class and specifies 
         $this->description = $this->l('Pague con PuntoPagos');
 		
 		$this->RFC1123_FORMAT = '%a, %d %b %Y %H:%M:%S GMT';
- 
-}
+	}
 
 	public function install() {
 		if (!parent::install()
