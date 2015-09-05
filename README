@@ -1,5 +1,5 @@
 Modulo de pagos para puntopagos para utlizar con el ecommerce prestashop
 
-Antes de instalar se deben setear las variables correctas en puntopagos_config.php
+Antes de utilizar y despues de instalar se deben setear las variables correctas en puntopagos_config.php, dentro de modules/puntopagos en su instalacion de prestashop
 
 Modulo empaquetado para instalar con gestor de modulos de prestashop 1.6 en: https://github.com/radixcl/prestashop_puntopagos/releases/download/1.16/puntopagos.zip
