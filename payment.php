@@ -14,10 +14,11 @@ require_once(dirname(__FILE__).'/../../init.php');
 require_once(dirname(__FILE__).'/puntopagos_config.php');
 require_once(dirname(__FILE__).'/puntopagos.php');
 
-if (!$cookie->isLogged())
+if (!Context::getContext()->customer->isLogged())
     Tools::redirect('authentication.php?back=order.php');
 
 $time = time();
+setlocale(LC_TIME, 'C');
 
 $puntopagos = new puntopagos();
 
